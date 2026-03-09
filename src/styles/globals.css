@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Prevent flash: script in layout sets class before paint */
+html.dark {
+  color-scheme: dark;
+}
+
+/* Print: hide nav, sidebar, comments, progress */
+@media print {
+  .no-print,
+  [data-reading-progress],
+  [data-sidebar],
+  [data-header],
+  [data-comments],
+  [data-share],
+  [data-related] {
+    display: none !important;
+  }
+}
+
+/* Code block copy button */
+pre {
+  position: relative;
+}
+
+pre [data-copy-button] {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}

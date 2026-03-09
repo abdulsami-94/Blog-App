@@ -1,0 +1,22 @@
+{
+  "blog-app": {
+    ".next/dev/package.json": [
+      {
+        "date": "2026-03-09T06:01:35.592Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 1
+      },
+      {
+        "date": "2026-03-09T06:02:07.579Z",
+        "user": {
+          "name": "Abdul Sami Shaikh",
+          "email": "abdulsamishaikh232@gmail.com"
+        },
+        "timeSpent": 32
+      }
+    ]
+  }
+}
